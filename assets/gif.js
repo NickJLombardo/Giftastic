@@ -70,11 +70,9 @@ $(document).on('click', '.showImage',  function() {
     var state = $(this).data('state');
     
     if (state == "still") {
-        console.log("still image works");
         $(this).attr('src', $(this).data('animate'))
                .data('state', 'animate');
     } else {
-        console.log("animated image works");
         $(this).attr('src', $(this).data('still'))
                .data('state', 'still');               
     }
